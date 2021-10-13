@@ -12,6 +12,8 @@ In this app we used some functionality listed below
 
 - #911F27
 - #FCF0C8
+- #630A10
+- #FACE7F
 
 ----
 
