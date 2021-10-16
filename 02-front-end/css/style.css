@@ -1,59 +1,140 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
 body {
-    line-height: 1;
+  background-color: #fcf0c8;
+  font-family: "Montserrat", sans-serif;
 }
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-body{
-
-background-color: #FCF0C8;
+/* Begin Common classes */
+.inputf:focus {
+  outline: none;
+  border-bottom: 4px solid #630a10;
 }
 
-.btn {  
-      border: none;
-      color: white;
-      padding: 12px 28px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      background-color: #630A10;
-      border-radius: 12px;
-    }
+.inputf {
+  width: 400px;
+  height: 25px;
+  border: none;
+  border-left: 6px solid #630a10;
+}
+
+/* btton */
+.btn {
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.tablecontrol {
+  width: 500px;
+  margin: 15px auto;
+  border-collapse: collapse;
+  border: 2px solid #630a10;
+}
+.tablecontrol th,
+td {
+  border: 2px solid #630a10;
+  padding: 5px;
+}
+
+.card {
+  width: 500px;
+  border: 3px solid #630a10;
+  border-radius: 12px;
+  margin: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* background color classes */
+.bg-color1 {
+  background-color: #fcf0c8;
+}
+.bg-color2 {
+  background-color: #630a10;
+}
+.bg-color3 {
+  background-color: #911f27;
+}
+.bg-color4 {
+  background-color: #face7f;
+}
+/* End background color classes */
+/* text color classes */
+.color1 {
+  color: #630a10;
+}
+.color2 {
+  color: #911f27;
+}
+.color3 {
+  color: #face7f;
+}
+/* End text color classes */
+
+/* heading classes */
+.heading1 {
+  font-size: 2.5em;
+}
+
+.heading2 {
+  font-size: 2em;
+}
+/* End heading classes */
+/* End Common classes */
+
+/* center div */
+.center-div {
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.center{
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Grid system 10 col*/
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.col1{
+    width: 80px;
+}
+.col2{
+    width: 160px;
+}
+.col3{
+    width: 240px;
+}
+.col4{
+    width: 320px;
+}
+.col5{
+    width: 400px;
+}
+.col6{
+    width: 480px;
+}
+.col7{
+    width: 560px;
+}
+.col8{
+    width: 640px;
+}
+.col9{
+    width: 720px;
+}
+.col10{
+    width: 800px;
+}
 
