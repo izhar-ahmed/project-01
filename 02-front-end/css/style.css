@@ -1,5 +1,6 @@
 body {
-    background-color: #fcf0c8;
+    box-sizing: border-box;
+    background-color: #D4ECDD;
     font-family: "Montserrat", sans-serif;
   }
   /* Begin Common classes */
@@ -7,14 +8,14 @@ body {
   /* Input type text css */
   .input-text:focus {
     outline: none;
-    border-bottom: 4px solid #630a10;
+    border-bottom: 4px solid #112031;
   }
   
   .input-text {
     width: 400px;
-    height: 25px;
+    height: 30px;
     border: none;
-    border-left: 5px solid #630a10;
+    border-left: 5px solid #112031;
     margin-top: 2px;
     margin-bottom: 12px;
   }
@@ -59,9 +60,9 @@ body {
   .input-check:hover input ~ .checkmark {
       background-color: #ccc;
     }
-    /* When the checkbox is checked, add a blue background */
+    /* When the checkbox is checked, add a background */
   .input-check input:checked ~ .checkmark {
-      background-color: #630a10;
+      background-color: #112031;
     }
     /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
@@ -130,9 +131,9 @@ body {
       background-color: #ccc;
     }
     
-    /* When the radio button is checked, add a blue background */
+    /* When the radio button is checked, add a background */
     .input-radio input:checked ~ .checkmark-radio {
-      background-color: #630a10;
+      background-color: #112031;
     }
     
     /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -159,6 +160,25 @@ body {
     
   
   /* End radio button css */
+  /* Input select css */
+  .custome-select{
+    width: 200px;
+    margin: 5px 0;
+  }
+  .custome-select select{
+    width: 115px;
+    height: 30px;
+    border: 3px solid #112031;
+  }
+  /* End input select css */
+  /* Input textarea */
+  .input-txtarea{
+    border: 1px solid #112031;
+  }
+  .input-txtarea:focus{
+    border: 3px solid #112031;
+  }
+  /* End input textarea */
   
   /* btton */
   .btn {
@@ -170,54 +190,70 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 5px 0 5px 2px;
     cursor: pointer;
+    width: 100px;
   }
-  
+  .btn-cancel{
+    color: #000;
+    border: 3px solid #112031;
+    padding: 12px 26px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0 5px 2px;
+    cursor: pointer;
+    width: 100px;
+    font-weight: bold;
+  }
+  /* End button css */
+  /* Table style*/
   .tablecontrol {
     width: 500px;
     margin: 15px auto;
     border-collapse: collapse;
-    border: 2px solid #630a10;
+    border: 2px solid #112031;
   }
   .tablecontrol th,
   td {
-    border: 2px solid #630a10;
+    border: 2px solid #112031;
     padding: 5px;
   }
-  
+  /* End table style */
+  /* Card css */
   .card {
-    width: 500px;
-    border: 3px solid #630a10;
+    /* width: 500px; */
+    border: 3px solid #112031;
     border-radius: 12px;
     margin: 10px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 20px;
   }
+  /* End card css */
   /* background color classes */
   .bg-color1 {
-    background-color: #fcf0c8;
+    background-color: #D4ECDD;
   }
   .bg-color2 {
-    background-color: #630a10;
+    background-color: #112031;
   }
   .bg-color3 {
-    background-color: #911f27;
+    background-color: #152D35;
   }
   .bg-color4 {
-    background-color: #face7f;
+    background-color: #345B63;
   }
   /* End background color classes */
   /* text color classes */
   .color1 {
-    color: #630a10;
+    color: #D4ECDD;
   }
   .color2 {
-    color: #911f27;
+    color: #112031;
   }
   .color3 {
-    color: #face7f;
+    color: #152D35;
   }
   /* End text color classes */
   
@@ -239,7 +275,8 @@ body {
   }
   
   .center{
-      margin: 0 auto;
+    margin: 5px auto;
+    display: block;
   }
   .text-center{
       text-align: center;
@@ -250,7 +287,6 @@ body {
   .container{
       width: 800px;
       margin: 0 auto;
-      display: flex;
   }
 
   .row::before, .row:after {
@@ -260,40 +296,51 @@ body {
   .col1{
       width: 80px;
       float: left;
+      min-height: 1px;
   }
   .col2{
       width: 160px;
       float: left;
+      min-height: 1px;
   }
   .col3{
       width: 240px;
       float: left;
+      min-height: 1px;
   }
   .col4{
       width: 320px;
       float: left;
+      min-height: 1px;
   }
   .col5{
       width: 400px;
       float: left;
+      min-height: 1px;
   }
   .col6{
       width: 480px;
       float: left;
+      min-height: 1px;
   }
   .col7{
       width: 560px;
       float: left;
+      min-height: 1px;
   }
   .col8{
       width: 640px;
       float: left;
+      min-height: 1px;
   }
   .col9{
       width: 720px;
       float: left;
+      min-height: 1px;
   }
   .col10{
       width: 800px;
       float: left;
+      min-height: 1px;
   }
+  /* End grid system */
