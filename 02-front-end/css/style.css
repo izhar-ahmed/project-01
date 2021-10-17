@@ -1,140 +1,299 @@
 body {
-  background-color: #fcf0c8;
-  font-family: "Montserrat", sans-serif;
-}
-/* Begin Common classes */
-.inputf:focus {
-  outline: none;
-  border-bottom: 4px solid #630a10;
-}
-
-.inputf {
-  width: 400px;
-  height: 25px;
-  border: none;
-  border-left: 6px solid #630a10;
-}
-
-/* btton */
-.btn {
-  border: none;
-  color: white;
-  padding: 12px 26px;
-  border-radius: 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.tablecontrol {
-  width: 500px;
-  margin: 15px auto;
-  border-collapse: collapse;
-  border: 2px solid #630a10;
-}
-.tablecontrol th,
-td {
-  border: 2px solid #630a10;
-  padding: 5px;
-}
-
-.card {
-  width: 500px;
-  border: 3px solid #630a10;
-  border-radius: 12px;
-  margin: 10px auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* background color classes */
-.bg-color1 {
-  background-color: #fcf0c8;
-}
-.bg-color2 {
-  background-color: #630a10;
-}
-.bg-color3 {
-  background-color: #911f27;
-}
-.bg-color4 {
-  background-color: #face7f;
-}
-/* End background color classes */
-/* text color classes */
-.color1 {
-  color: #630a10;
-}
-.color2 {
-  color: #911f27;
-}
-.color3 {
-  color: #face7f;
-}
-/* End text color classes */
-
-/* heading classes */
-.heading1 {
-  font-size: 2.5em;
-}
-
-.heading2 {
-  font-size: 2em;
-}
-/* End heading classes */
-/* End Common classes */
-
-/* center div */
-.center-div {
-  width: 800px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.center{
-    margin: 0 auto;
-}
-.text-center{
-    text-align: center;
-}
-
-/* Grid system 10 col*/
-
-.container{
-    width: 800px;
-    margin: 0 auto;
-    display: flex;
-}
-.col1{
-    width: 80px;
-}
-.col2{
-    width: 160px;
-}
-.col3{
-    width: 240px;
-}
-.col4{
-    width: 320px;
-}
-.col5{
+    background-color: #fcf0c8;
+    font-family: "Montserrat", sans-serif;
+  }
+  /* Begin Common classes */
+  
+  /* Input type text css */
+  .input-text:focus {
+    outline: none;
+    border-bottom: 4px solid #630a10;
+  }
+  
+  .input-text {
     width: 400px;
-}
-.col6{
-    width: 480px;
-}
-.col7{
-    width: 560px;
-}
-.col8{
-    width: 640px;
-}
-.col9{
-    width: 720px;
-}
-.col10{
+    height: 25px;
+    border: none;
+    border-left: 5px solid #630a10;
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
+  /* End input type text css */
+  
+  /* checkbox css */
+  /* Customize the label (the input-check) */
+  
+  .input-check {
+      display: inline-block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    /* Hide the browser's default checkbox */
+    .input-check input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  
+    /* Create a custom checkbox */
+  .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+  }  
+  
+  /* On mouse-over, add a grey background color */
+  .input-check:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    /* When the checkbox is checked, add a blue background */
+  .input-check input:checked ~ .checkmark {
+      background-color: #630a10;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    /* Show the checkmark when checked */
+  .input-check input:checked ~ .checkmark:after {
+      display: block;
+    }
+    /* Style the checkmark/indicator */
+  .input-check .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+  /* End input type checkbox css */
+  
+  
+  /* radion button css */
+  
+  /* Customize the label (the container) */
+  .input-radio {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    /* Hide the browser's default radio button */
+  .input-radio input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  
+    /* Create a custom radio button */
+  .checkmark-radio {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+    }
+  
+    /* On mouse-over, add a grey background color */
+  .input-radio:hover input ~ .checkmark-radio {
+      background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .input-radio input:checked ~ .checkmark-radio {
+      background-color: #630a10;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark-radio:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .input-radio input:checked ~ .checkmark-radio:after {
+      display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+    .input-radio .checkmark-radio:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+    
+  
+  /* End radio button css */
+  
+  /* btton */
+  .btn {
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .tablecontrol {
+    width: 500px;
+    margin: 15px auto;
+    border-collapse: collapse;
+    border: 2px solid #630a10;
+  }
+  .tablecontrol th,
+  td {
+    border: 2px solid #630a10;
+    padding: 5px;
+  }
+  
+  .card {
+    width: 500px;
+    border: 3px solid #630a10;
+    border-radius: 12px;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  /* background color classes */
+  .bg-color1 {
+    background-color: #fcf0c8;
+  }
+  .bg-color2 {
+    background-color: #630a10;
+  }
+  .bg-color3 {
+    background-color: #911f27;
+  }
+  .bg-color4 {
+    background-color: #face7f;
+  }
+  /* End background color classes */
+  /* text color classes */
+  .color1 {
+    color: #630a10;
+  }
+  .color2 {
+    color: #911f27;
+  }
+  .color3 {
+    color: #face7f;
+  }
+  /* End text color classes */
+  
+  /* heading classes */
+  .heading1 {
+    font-size: 2.5em;
+  }
+  
+  .heading2 {
+    font-size: 2em;
+  }
+  /* End heading classes */
+  /* End Common classes */
+  
+  /* center div */
+  .center-div {
     width: 800px;
-}
+    margin: 20px auto;
+  }
+  
+  .center{
+      margin: 0 auto;
+  }
+  .text-center{
+      text-align: center;
+  }
+  
+  /* Grid system 10 col*/
+  
+  .container{
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+  }
 
+  .row::before, .row:after {
+    clear: both;
+  }
+
+  .col1{
+      width: 80px;
+      float: left;
+  }
+  .col2{
+      width: 160px;
+      float: left;
+  }
+  .col3{
+      width: 240px;
+      float: left;
+  }
+  .col4{
+      width: 320px;
+      float: left;
+  }
+  .col5{
+      width: 400px;
+      float: left;
+  }
+  .col6{
+      width: 480px;
+      float: left;
+  }
+  .col7{
+      width: 560px;
+      float: left;
+  }
+  .col8{
+      width: 640px;
+      float: left;
+  }
+  .col9{
+      width: 720px;
+      float: left;
+  }
+  .col10{
+      width: 800px;
+      float: left;
+  }
