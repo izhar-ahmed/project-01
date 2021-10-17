@@ -3,18 +3,16 @@ This is our first app.
 In this app we used some functionality listed below
 
 - Authentication
-- Authorization
 - CRUD
 
 ---- 
 
 # Color Code
 
-- #911F27
-- #FCF0C8
-- #630A10
-- #FACE7F
-
+- #D4ECDD (Teal-light)
+- #345B63 (Navy-dark)
+- #152D35 (black-dark)
+- #112031 (Navy-blue)
 ----
 
 # Font Family
