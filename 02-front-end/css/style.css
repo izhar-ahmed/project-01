@@ -4,6 +4,7 @@ body {
     font-family: "Montserrat", sans-serif;
     position: relative;
     min-height: 100vh;
+    max-height: 200vh;
   }
   body::after {
     content: '';
@@ -27,7 +28,9 @@ body {
     margin-bottom: 12px;
   }
   /* End input type text css */
-  
+  .input-date{
+    border: solid 3px #112031;
+  }
   /* checkbox css */
   /* Customize the label (the input-check) */
   
@@ -173,14 +176,15 @@ body {
     margin: 5px 0;
   }
   .custome-select select{
-    width: 115px;
+    width: 400px;
     height: 30px;
     border: 3px solid #112031;
   }
   /* End input select css */
   /* Input textarea */
   .input-txtarea{
-    border: 1px solid #112031;
+    border: 2px solid #112031;
+    width: 400px;
   }
   .input-txtarea:focus{
     border: 3px solid #112031;
@@ -228,17 +232,18 @@ body {
   .tablecontrol th,
   td {
     border: 2px solid #112031;
-    padding: 5px;
+    /* padding: 5px; */
+    padding: 3px;
+    height: 30px;
   }
   /* End table style */
   /* Card css */
   .card {
-    width: 200px;
+    width: auto;
     border: 3px solid #112031;
     border-radius: 12px;
     margin: 10px auto;
     padding: 20px;
-    height: 100px;
   }
   /* End card css */
   /* background color classes */
