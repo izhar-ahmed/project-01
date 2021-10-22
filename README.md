@@ -9,6 +9,7 @@ In this app we used some functionality listed below
 
 # Color Code
 
+- link: https://colorhunt.co/palette/d4ecdd345b63152d35112031
 - #D4ECDD (Teal-light)
 - #345B63 (Navy-dark)
 - #152D35 (black-dark)

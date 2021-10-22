@@ -2,13 +2,20 @@ body {
     box-sizing: border-box;
     background-color: #D4ECDD;
     font-family: "Montserrat", sans-serif;
+    position: relative;
+    min-height: 100vh;
+  }
+  body::after {
+    content: '';
+    display: block;
+    height: 40px; /* Set same as footer's height */
   }
   /* Begin Common classes */
   
   /* Input type text css */
   .input-text:focus {
     outline: none;
-    border-bottom: 4px solid #112031;
+    /* border-bottom: 4px solid #112031; */
   }
   
   .input-text {
@@ -182,6 +189,7 @@ body {
   
   /* btton */
   .btn {
+    width: auto !important;
     border: none;
     color: white;
     padding: 12px 26px;
@@ -212,9 +220,10 @@ body {
   /* Table style*/
   .tablecontrol {
     width: 500px;
-    margin: 15px auto;
+    margin: 0 auto;
     border-collapse: collapse;
     border: 2px solid #112031;
+    margin-top: 100px;
   }
   .tablecontrol th,
   td {
@@ -224,11 +233,12 @@ body {
   /* End table style */
   /* Card css */
   .card {
-    /* width: 500px; */
+    width: 200px;
     border: 3px solid #112031;
     border-radius: 12px;
     margin: 10px auto;
     padding: 20px;
+    height: 100px;
   }
   /* End card css */
   /* background color classes */
@@ -288,7 +298,7 @@ body {
       width: 800px;
       margin: 0 auto;
   }
-
+  .container::after,
   .row::before, .row:after {
     clear: both;
   }
