@@ -291,7 +291,7 @@ body {
   
   .center{
     margin: 5px auto;
-    display: block;
+    display: inline-block;
   }
   .text-center{
       text-align: center;
