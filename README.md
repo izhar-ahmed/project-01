@@ -6,6 +6,9 @@ In this app we used some functionality listed below
 - CRUD
 
 ---- 
+### Architecture Diagram
+![Project 01 Architecture Diagram](docs/architecture/architecture.png?raw=true "Project 01 Architecture Diagram")
+***
 
 # Color Code
 
