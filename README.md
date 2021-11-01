@@ -10,6 +10,10 @@ In this app we used some functionality listed below
 ![Project 01 Architecture Diagram](doc/architecture/architecture.png?raw=true "Project 01 Architecture Diagram")
 ***
 
+### Class Diagram
+![Project 01 Class Diagram](doc/class-diagram/project-01-class-diagram.png?raw=true "Project 01 Class Diagram")
+***
+
 # Color Code
 
 - link: https://colorhunt.co/palette/d4ecdd345b63152d35112031
