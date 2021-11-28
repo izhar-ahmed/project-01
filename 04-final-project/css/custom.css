@@ -1,0 +1,90 @@
+header {
+  background-color: #345b63;
+}
+nav {
+  height: 80px;
+  background-color: #345b63;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  float: left;
+  /* background-color: #D4ECDD; */
+  height: 30px;
+  margin-top: 25px;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100px;
+  float: left;
+  height: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  color: #D4ECDD;
+}
+
+nav ul li ul {
+  float: none;
+  height: 60px;
+  width: 100px;
+  background-color: #112031;
+  display: none;
+  margin: 0;
+}
+nav ul li ul li {
+  width: 100px;
+  float: none;
+}
+
+nav ul li ul li a {
+  display: block;
+}
+nav ul li:hover ul {
+  display: block;
+}
+.nav-btn {
+  float: right;
+  margin-top: 17px;
+}
+.tablecontrol a{
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.btn-list{
+    position: absolute;
+    top: 175px;
+    right: 550px;
+}
+.footer{
+    height: 40px;
+    background-color: #112031;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: #D4ECDD;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.footer p{
+    display: inline-block;
+    color: #D4ECDD;
+    margin-left: 650px;
+}
+
+
+
